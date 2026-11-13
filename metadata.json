@@ -1,0 +1,6 @@
+{
+  "name": "AI Music Studio",
+  "description": "Nền tảng tạo nhạc AI và AI Cover chuyên nghiệp hàng đầu - Sáng tác bài hát, tạo giọng hát AI, tách lời và cover bài hát.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
