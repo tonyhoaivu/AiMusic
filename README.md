@@ -29,8 +29,8 @@ npm run start    # Runs production server (NODE_ENV=production node server.js)
 
 ## Deploying to Hosting
 ### 1. Vercel
-- The project includes `vercel.json` and `api/[...path].ts` (catch-all Express serverless API + SPA rewrite excluding `/api/*`, `/images/*`, `/assets/*`).
-- Add `GEMINI_API_KEY`, `SESSION_SECRET`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and your music provider API keys in **Vercel Project Settings → Environment Variables**.
+- The project includes `vercel.json` and `api/[...path].js` (bundling `api/_app.mjs` during `npm run build`, with SPA rewrite excluding `/api/*`, `/images/*`, `/assets/*`).
+- Add `GEMINI_API_KEY`, `SESSION_SECRET`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and your music provider API keys in **Vercel Project Settings → Environment Variables** (do **NOT** add `NODE_ENV=production` to Vercel Env Vars).
 - Deploy directly from Git or via `vercel --prod`.
 
 ### 2. VPS (Ubuntu/Debian + PM2 + Nginx + HTTPS)
